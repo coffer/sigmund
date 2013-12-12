@@ -1,13 +1,13 @@
 package com.grenadelawnchair.games.sigmund.utils;
 
 import com.badlogic.gdx.Game;
-import com.grenadelawnchair.games.sigmund.screen.SplashScreen;
+import com.grenadelawnchair.games.sigmund.screen.GameWorld;
 
 public class GDXGame extends Game {
 
 	@Override
 	public void create() {
-		setScreen(new SplashScreen());
+		setScreen(new GameWorld());
 	}
 
 	@Override

@@ -3,7 +3,6 @@ package com.grenadelawnchair.games.sigmund.entity;
 import net.dermetfan.utils.libgdx.graphics.AnimatedSprite;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -16,7 +15,7 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 
-public class Sigmund extends InputAdapter implements Entity {
+public class Sigmund implements Entity {
 
 	private Body body;
 	private final float MAX_SPEED = 5f;
@@ -92,9 +91,9 @@ public class Sigmund extends InputAdapter implements Entity {
 
 	@Override
 	public void dispose(){
-		for(int i = 0; i < sprites.length; i++){
-			sprites[0].getTexture().dispose();
-		}
+//		for(int i = 0; i < sprites.length; i++){
+//			sprites[0].getTexture().dispose();
+//		}
 	}
 
 	private void playAnimation(){
